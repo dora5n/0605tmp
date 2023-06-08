@@ -56,3 +56,26 @@ $("h1").on("click", function () {
   }
   // この下消さない
 });
+
+let num = 1;
+
+$(".test").on("click", function () {
+  // cssをjqueryでつけちゃおう！
+
+  // $(this).append(`${num}: <p>押したぞ！！！</p>`);
+  // $(this).addClass("morita");
+  // $(this).removeClass("morita");
+  // $(".test").toggleClass("morita");
+  // thisはclickイベント等の指定しているclass名のことをいいます🤗
+  // h2 class="bb"を操作したいとき
+  // $(".bb").html(`<p>${num}: 押したぞ！！！</p>`);
+  num += 1;
+
+  // fadeOut　消すおまじない
+  $(".bb").fadeOut(2000); //2000 は2秒
+  // $(".bb").fadeIn(2000); //2000 は2秒
+
+  // if (num === 9) {
+  //   alert("おめでとう！！たくさん遊んでくれて！！！");
+  // }
+});
